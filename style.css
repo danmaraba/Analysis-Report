@@ -304,10 +304,47 @@ body{
         
     }
     .total-amount{
-        margin-left:-16rem;
+        margin-left:-12rem;
     }
     .values{
-        margin-left:-16rem;
+        margin-left:-12rem;
+    }
+    
+  }
+
+  @media(min-width:1920px){
+    .title{
+        font-size:48px;
+        margin-left:2rem;
+        display:flex;
+        flex-wrap:wrap;
+        /* margin-right:-4rem; */
+    }
+    
+    .period{
+        margin-left:2rem;
+    }
+
+    .btns{
+        display:flex;
+        margin-left:2rem;
+        flex-direction:row;
+    }
+    .clothing-container{
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        /* margin-left:-100px; */
+        align-items:center;
+        margin-left:2rem;
+        /* margin-right:5rem; */
+        
+    }
+    .total-amount{
+        margin-left:2rem;
+    }
+    .values{
+        margin-left:-2rem;
     }
     
   }
