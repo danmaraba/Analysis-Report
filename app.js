@@ -1,86 +1,142 @@
 const menClothing=[
     {
         id:1,
-        category:'Polo',
+        type:'Polo',
+        category:'Purchases',
         price:'$40',
         image:'./images/istockphoto-1126630118-2048x2048.jpg',
         description:'Lorem ipsum dolor sit amet consectetur.'
     },
     {
         id:2,
-        category:'T-shirt',
+        type:'T-shirt',
+        category:'Sales',
         price:'$30',
         image:'./images/istockphoto-1151955707-170667a.webp',
         description:'Lorem ipsum dolor sit amet consectetur.'
     },
     {
         id:3,
-        category:'T-shirt',
+        type:'T-shirt',
+        category:'Outstanding',
         price:'$25',
         image:'./images/istockphoto-1490616219-170667a.webp',
         description:'Lorem ipsum dolor sit amet consectetur.'
     },
     {
         id:4,
-        category:'Polo',
+        type:'Polo',
+        category:'Sales',
         price:'$50',
         image:'./images/istockphoto-1496823090-170667a.webp',
         description:'Lorem ipsum dolor sit amet consectetur.'
     },
     {
         id:5,
-        category:'Shirt',
+        type:'Shirt',
+        category:'Outstanding',
         price:'$40',
         image:'./images/photo-1598032895397-b9472444bf93.avif',
         description:'Lorem ipsum dolor sit amet consectetur.'
     },
     {
         id:6,
-        category:'Shirt',
+        type:'Shirt',
+        category:'Sales',
         price:'$70',
         image:'./images/photo-1598033129183-c4f50c736f10.avif',
         description:'Lorem ipsum dolor sit amet consectetur.'
     },
     {
         id:7,
-        category:'Pant',
+        type:'Pant',
+        category:'Purchases',
         price:'$35',
         image:'./images/istockphoto-532278616-170667a.webp',
         description:'Lorem ipsum dolor sit amet consectetur.'
     },
     {
         id:8,
-        category:'Pant',
+        type:'Pant',
+        category:'Purchases',
         price:'$47',
         image:'./images/istockphoto-508549005-170667a.webp',
         description:'Lorem ipsum dolor sit amet consectetur.'
     },
     {
         id:9,
-        category:'Short',
+        type:'Short',
+        category:'Sales',
         price:'$75',
         image:'./images/istockphoto-504371432-170667a.webp',
         description:'Lorem ipsum dolor sit amet consectetur.'
     },
     {
         id:10,
-        category:'Jeans',
+        type:'Jeans',
+        category:'Sales',
         price:'$45',
         image:'./images/istockphoto-527236518-170667a.webp',
         description:'Lorem ipsum dolor sit amet consectetur.'
     },
     {
         id:11,
-        category:'Jeans',
+        type:'Jeans',
+        category:'Sales',
         price:'$56',
         image:'./images/istockphoto-1185850452-170667a.webp',
         description:'Lorem ipsum dolor sit amet consectetur.'
     },
     {
         id:12,
-        category:'Short',
+        type:'Short',
+        category:'Purchases',
         price:'$37',
         image:'./images/istockphoto-175438283-170667a.webp',
         description:'Lorem ipsum dolor sit amet consectetur.'
     }
 ]
+
+const filterButtons=document.querySelectorAll('.filter-btns');
+const clothingContainer=document.querySelector('.clothing-container');
+window.addEventListener('DOMContentLoaded', function(){
+    // console.log(menClothing);
+    displayClothing(menClothing)
+})
+
+
+function displayClothing(items){
+   let displayClothing= items.map(function(item){
+        return `<img
+    src="${item.image}"
+    alt="polo"
+    class="image"
+  />
+  <div class="clothing">
+    <h4>${item.type}</h4>
+    <h4 class="price">${item.price}</h4>
+  </div>
+  <p class="description">${item.description}</p>`
+    })
+    displayClothing=displayClothing.join('');
+    clothingContainer.innerHTML=displayClothing;
+}
+
+// filter buttons
+filterButtons.forEach(function(btn){
+    btn.addEventListener('click',function(e){
+        const category=e.currentTarget.dataset.id;
+        // console.log(`${menClothing[category]}`);
+        const menClothingCategory=menClothing.filter(function(items){
+            if(items.category===category){
+                return items
+            } 
+        })
+        if(category==='All'){
+            displayClothing(menClothing)
+        } else{
+            displayClothing(menClothingCategory)
+        }
+    })
+})
+
