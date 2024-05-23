@@ -9,9 +9,32 @@ body{
 }
 
 .main-container{
-    margin:4rem 25rem;
+    /* margin:; */
+    margin-top:4rem;
+    margin-left:25rem;
+    margin-right:5rem;
 }
 
+.title{
+    font-size:48px;
+}
+
+.period{
+    color:#2874A6;
+    font-size:32px;
+}
+
+.clothing-container{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    align-content:center;
+    /* background:red; */
+    margin-left:-8rem;
+    align-items:center;
+    gap:1rem;
+    justify-content:center;
+}
 .image{
     width:150px;
     height:120px;
@@ -40,15 +63,16 @@ body{
   .clothing{
     display:flex;
     align-items:center;
-    margin-left:10rem;
-    margin-top:-10rem;
+    margin-left:8px;
+    margin-top:-5rem;
   }
 
   .price{
     margin-left:12px;
   }
   .description{
-    margin-left:10rem;
+    margin-left:-48px;
+    margin-top:48px;
   }
 
   .totals{
@@ -62,4 +86,155 @@ body{
 
   .totals:hover{
     background:#B3B6B7;
+  }
+
+  .values{
+    display:flex;
+  }
+
+  .value1{
+    margin:0px 12px;
+    border-top:2px solid;
+    gap:1rem;
+    /* display:flex; */
+  }
+
+  @media(max-width:430px){
+    .title{
+        font-size:48px;
+        margin-left:-24rem;
+        display:flex;
+        flex-wrap:wrap;
+        /* margin-right:-4rem; */
+    }
+    
+    .period{
+        margin-left:-24rem;
+    }
+
+    .btns{
+        display:flex;
+        margin-left:-24rem;
+        flex-direction:row;
+    }
+    .clothing-container{
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        margin-left:-442px;
+        /* margin:2px; */
+        align-items:center;
+    }
+    .total-amount{
+        margin-left:-24rem;
+    }
+    .values{
+        margin-left:-24rem;
+    }
+    
+  }
+
+  @media(max-width:390px){
+    .title{
+        font-size:48px;
+        margin-left:-24rem;
+        display:flex;
+        flex-wrap:wrap;
+        /* margin-right:-4rem; */
+    }
+    
+    .period{
+        margin-left:-24rem;
+    }
+
+    .btns{
+        display:flex;
+        margin-left:-24rem;
+        flex-direction:row;
+        align-content:baseline;
+    }
+    .clothing-container{
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        margin-left:-441px;
+        align-items:center;
+    }
+    .total-amount{
+        margin-left:-24rem;
+    }
+    .values{
+        margin-left:-24rem;
+    }
+    
+  }
+
+  @media(max-width:768px){
+    .title{
+        font-size:48px;
+        margin-left:-20rem;
+        display:flex;
+        flex-wrap:wrap;
+        /* margin-right:-4rem; */
+    }
+    
+    .period{
+        margin-left:-20rem;
+    }
+
+    .btns{
+        display:flex;
+        margin-left:-20rem;
+        flex-direction:row;
+    }
+    .clothing-container{
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        margin-left:-300px;
+        align-items:center;
+        
+    }
+    .total-amount{
+        margin-left:-20rem;
+    }
+    .values{
+        margin-left:-20rem;
+    }
+    
+  }
+
+  @media(max-width:863px){
+    .title{
+        font-size:48px;
+        margin-left:-16rem;
+        display:flex;
+        flex-wrap:wrap;
+        /* margin-right:-4rem; */
+    }
+    
+    .period{
+        margin-left:-16rem;
+    }
+
+    .btns{
+        display:flex;
+        margin-left:-16rem;
+        flex-direction:row;
+    }
+    .clothing-container{
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        margin-left:-200px;
+        align-items:center;
+        
+    }
+    .total-amount{
+        margin-left:-16rem;
+    }
+    .values{
+        margin-left:-16rem;
+    }
+    
   }
