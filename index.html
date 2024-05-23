@@ -4,10 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Tangerine"
+    />
     <title>Analysis Report</title>
   </head>
   <body>
-    <main>
+    <main class="main-container">
       <!-- title -->
       <label class="title">ABS Men's Clothing Store Analysis Report</label>
       <p class="period">Period:05/01/2024-05/31/2024</p>
@@ -16,6 +20,28 @@
       <button class="filter-btns">Purchases</button>
       <button class="filter-btns">Sales</button>
       <button class="filter-btns">Outstanding Stock</button>
+      <!-- clothing container -->
+      <div class="clothing-container">
+        <img
+          src="./images/istockphoto-1126630118-2048x2048.jpg"
+          alt="polo"
+          class="image"
+        />
+        <div class="clothing">
+          <h4>Polo</h4>
+          <h4 class="price">$40</h4>
+        </div>
+        <p class="description">
+            Lorem ipsum dolor sit amet consectetur.
+          </p>
+          <!-- totals section -->
+          <div class="total-amount">
+            <button class="totals">Total A</button>
+            <button class="totals">Total P</button>
+            <button class="totals">Total S</button>
+            <button class="totals">Total O</button>
+          </div>
+      </div>
     </main>
     <!-- javaScript -->
     <script src="./app.js"></script>
