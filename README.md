@@ -13,7 +13,7 @@ cd Reviews
 Use vscode to open it
 
 ## live link
-
+https://analysis-report-xi.vercel.app/
 ## Technologies Used
 HTML
 VanillaJs
