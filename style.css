@@ -4,6 +4,8 @@
 
 body{
     background:#FBFCFC;
+    font-family:'Tangerine';
+    font-size:25px;
 }
 
 .main-container{
@@ -19,4 +21,45 @@ body{
 .image:hover {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
+  }
+
+  .filter-btns{
+    border-style:none;
+    border-radius:8px;
+    margin:12px 12px;
+    padding:8px;
+    background:#FDFEFE;
+    cursor:pointer;
+    
+  }
+
+  .filter-btns:hover{
+    background:#B3B6B7;
+  }
+
+  .clothing{
+    display:flex;
+    align-items:center;
+    margin-left:10rem;
+    margin-top:-10rem;
+  }
+
+  .price{
+    margin-left:12px;
+  }
+  .description{
+    margin-left:10rem;
+  }
+
+  .totals{
+    border-style:none;
+    border-radius:8px;
+    margin:12px 12px;
+    padding:8px;
+    background:#FDFEFE;
+    cursor:pointer;
+  }
+
+  .totals:hover{
+    background:#B3B6B7;
   }
