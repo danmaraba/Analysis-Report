@@ -1,0 +1,22 @@
+:root:{
+    --body-color:#2E4053;
+}
+
+body{
+    background:#FBFCFC;
+}
+
+.main-container{
+    margin:4rem 25rem;
+}
+
+.image{
+    width:150px;
+    height:120px;
+    border-radius:8px;
+    border:2px solid grey;
+}
+.image:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
