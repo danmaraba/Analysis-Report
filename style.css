@@ -134,6 +134,47 @@ body{
     
   }
 
+  @media(max-width:400px){
+    .title{
+        font-size:48px;
+        /* margin-left:-8rem; */
+        display:flex;
+        flex-wrap:wrap;
+        color:red;
+        margin-right:-32rem;
+    }
+    
+    .period{
+        margin-left:-24rem;
+    }
+
+    .btns{
+        display:flex;
+        margin-right:-32rem;
+        /* margin-left:-24rem; */
+        flex-direction:row;
+        align-items:center;
+        /* color:red; */
+    }
+    .clothing-container{
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        margin-right:-24rem;
+        /* margin-left:-442px; */
+        /* margin:2px; */
+        align-items:center;
+    }
+    .total-amount{
+        /* margin-left:-24rem; */
+        margin-right:-32rem;
+    }
+    .values{
+        /* margin-left:-24rem; */
+        margin-right:-32rem;
+    }
+    
+  }
   @media(max-width:390px){
     .title{
         font-size:48px;
